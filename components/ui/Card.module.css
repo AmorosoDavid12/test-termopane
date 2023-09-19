@@ -1,0 +1,24 @@
+.card {
+  background-color:rgb(238 236 236 / 95%);
+  border-radius: 56px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+
+.card:hover {
+  transform: scale(1.05); /* Scale the element by 20% on hover */
+}
+
+ 
+@media (max-width: 768px) {
+  .card{
+    border-radius: 76px;
+  }
+} 
+
+@media (max-width: 488px) {
+  .card{
+    border-radius: 46px;
+  }
+} 
