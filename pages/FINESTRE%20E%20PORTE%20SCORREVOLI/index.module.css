@@ -1,34 +1,26 @@
 /*//////////// part 1 /////////// */
 .section{
-    background-color: #ffffffe5;
+    background-color: #ffffff;
 }
 .section .wrapper{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     padding-top: 60px ;
     padding-bottom: 60px ;
 }
-.section .wrapper .row{
-    text-align: center;
-    max-width: 40%;
-}
-.section .wrapper .row img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10%;
-    box-shadow: 5px 4px 14px 3px rgba(0, 0, 0, 0.2);
+.section .wrapper .row1{
+    max-width: 90%;
 }
 .section .wrapper .row2{
-    text-align: center;
-    max-width: 40%;
-    padding-left: 30px;
+    display: flex;
+    max-width: 90%;
 }
-.section .wrapper .row h2{
-    color: #0a57a3;
-    font-size: 25px;
-    line-height: 30px;
+.section .wrapper .row2 img{
+    margin-left: 30px;
+    max-width: 25%;
 }
+
 /*//////////// Hover Button //////////*/
 @keyframes pulse {
     0% {
@@ -65,73 +57,19 @@
 /*//////////// part 2 /////////// */
 .section2{
     background-color: #e2e0e0e7;
-    padding-top: 10px;
 }
 .section2 .wrapper{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     padding-top: 50px ;
     padding-bottom: 60px ;
 }
 .section2 .wrapper .row{
     text-align: left;
-    max-width: 40%;
-    padding-left: 20px;
-}
-.section2 .wrapper .row2{
-    text-align: left;
-    max-width: 40%;
-}
-/*//////////// part 3 /////////// */
-.section3{
-    background-color: #fff;
-    padding-top: 10px;
-}
-.section3 .wrapper{
-    display: flex;
-    align-items: baseline;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    justify-content: space-evenly
-}
-.section3 .wrapper .row{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 40%;
+    max-width: 30%;
    
 }
 
-.section3 .wrapper a {
-    color: #065e99;
-    font-weight: 600;
-    font-size: 26px;
-}
-.section3 .wrapper .row img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-@media (max-width: 980px) {
-/*//////////// part 1 /////////// */
-    .section .wrapper{
-        flex-direction: column;
-    }
-    .section .wrapper .row{
-        max-width: 90%;
-    }
-    .section .wrapper .row2{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        max-width: 90%;
-    }
-
-}
 
   @media (max-width: 760px) {
 /*//////////// Hover Button //////////*/
@@ -145,12 +83,14 @@
     padding-top: 50px ;
     padding-bottom: 30px ;
 }
+.section .wrapper .row1{
+    max-width: 85%;
+}
    .section .wrapper .row2{
-        padding-left: 0;
-        padding-top: 25px;
+        flex-direction: column;
         max-width: 85%;
     }
-    .section .wrapper .row img {
+    .section .wrapper .row2 img {
         max-width: 85%;
     }
 

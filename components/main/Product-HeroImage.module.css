@@ -66,6 +66,9 @@
         top: 330px;
         left: 15px; 
         }
+        .description.short-text{
+        top: 370px;
+        }
         .title {
             font-size: 18px;
         }

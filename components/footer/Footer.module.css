@@ -4,13 +4,12 @@
     color: #f2f2f2;
     padding: 20px 0;
     padding-top: 40px;
-    padding-left: 30PX;
 
 }
 
 .footer .footer-bottom-nav .container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
@@ -52,4 +51,18 @@
     font-size: 16px;
     line-height: 22px;
     padding: 20px 0 20px;
+}
+
+@media (max-width: 800px) {
+    .footer .footer-bottom-nav .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .Footer_links_subsection {
+        width: 60%;
+    }
+    
 }

@@ -19,7 +19,7 @@ function MeetupItem(props) {
           <img src={props.image} alt={props.title} />
         </div>
         <div className={classes.content}>
-        <h3 className={`${props.title.length < 25 ? classes.title : ''}`}>{props.title}</h3>
+        <h3 className={`${props.title.length < 32 ? classes.title : ''}`}>{props.title}</h3>
         </div>
         <div className={classes.price}>
         <h1>{props.price}</h1>

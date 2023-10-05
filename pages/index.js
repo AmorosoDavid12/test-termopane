@@ -2,6 +2,7 @@ import MeetupList from "../components/meetups/MeetupList"
 import Head from "next/head";
 import Footer from "../components/footer/Footer";
 import HeroImage from "../components/main/HeroImage";
+import InfoTel from "../components/InfoTel/InfoTel";
 
 
 function HomePage(props) {
@@ -13,7 +14,8 @@ function HomePage(props) {
            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </Head>
         <HeroImage/>
-        <MeetupList meetups={props.meetups} />
+        <MeetupList products={props.products} />
+        <InfoTel/>
         <Footer/>
         </>
     )
@@ -42,8 +44,8 @@ function HomePage(props) {
 
 export async function getStaticProps() {
     return {props: {
-        meetups: [
-            {title:'FINESTRE E PORTE BALCONE CLASSICHE',
+        products: [
+            {title:'FINESTRE STANDARD E PORTE BALCONE',
             image:'Prod1/ferestre-clasice__500x422.png',
             price:'200 Eur/pz',
             id:'Prod1'},
