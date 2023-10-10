@@ -1,0 +1,187 @@
+/*//////////// part 1 /////////// */
+.section{
+    background-color: #ffffff;
+}
+.section .wrapper{
+    display: flex;
+    align-items: center;
+    padding: 40px 2.5% 40px 2.5%;
+}
+.section .wrapper .row1{
+    padding-right: 20px;
+    max-width: 63%;
+}
+.section .wrapper .row1 p{
+    padding: 13px;
+    font-size: 18px;
+}
+
+
+/*//////////// Hover Button //////////*/
+@keyframes pulse {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.25);
+    }
+  
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+.hoverButton {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    border: solid #3E50E5;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation: pulse 2s infinite;
+    transform-origin: center;
+}
+:hover .hoverButton {
+    cursor: pointer;
+}
+  
+.active {
+    display: none;
+}
+
+/*//////////// part 2 /////////// */
+.section2{
+    background-color: #e2e0e0e7;
+}
+.section2 .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px ;
+    padding-bottom: 60px ;
+}
+.section2 .wrapper .row{
+    text-align: left;
+    max-width: 30%;
+   
+}
+/*//////////// part 3 /////////// */
+.section3{
+    background-color: #ffffff;
+}
+.section3 .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 40px ;
+    padding-bottom: 55px ;
+}
+.section3 .wrapper .row1{
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    padding-bottom: 35px;
+}
+.section3 .wrapper .row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .wrapper .row2 div{
+    padding-left: 25px;
+   max-width: 47.5%;
+}
+.section3 .wrapper .row2 div img{
+    max-width: 95%;
+ }
+ 
+
+  @media (max-width: 800px) {
+/*//////////// Hover Button //////////*/
+     .hoverButton {
+        right: 9px;
+        bottom: 35px;
+        border-width: 0 6px 6px 0;
+        padding: 7px;
+    }
+ /*//////////// part 1 /////////// */   
+ .section .wrapper{
+    flex-direction: column;
+}
+.section .wrapper .row1{
+    padding-right: 0;
+    max-width: 85%;
+}
+.section .wrapper .row1 p{
+    padding: 13px;
+    font-size: 16px;
+}
+.section .wrapper iframe{
+    max-width: 85%;
+    height: 180px ;
+}
+
+
+/*//////////// part 2 /////////// */
+.section2 .wrapper{
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.section2 .wrapper .row{
+    text-align: center;
+    padding-top: 20px;
+    max-width: 85%;
+    padding-left: 0;
+}
+  .section2 .wrapper .row2{
+    text-align: center;
+    padding-top: 20px;
+    max-width: 85%;
+    padding-bottom: 20px;    
+}
+/*//////////// part 3 /////////// */
+
+.section3 .wrapper{
+ flex-direction: column;
+ align-items: center;
+    padding-top: 40px ;
+    padding-bottom: 40px ;
+}
+.section3 .wrapper .row{
+    max-width: 85%;
+    padding-left: 0;
+}
+  .section3 .wrapper .row2{  
+    max-width: 90%;
+}
+.section3 .wrapper .row img {
+    max-width: 85%;
+    
+}
+.section3 .wrapper .row2 img {
+    max-width: 70%;
+    padding-top: 30px;
+}
+.section3 .wrapper .row2{
+    padding-bottom: 0;
+}
+/*//////////// part 3 /////////// */
+
+.section3 .wrapper .row1{
+    max-width: 85%;
+}
+.section3 .wrapper .row2{
+    flex-direction: column;
+}
+.section3 .wrapper .row2 div{
+    padding-left: 0;
+   max-width: 92.5%;
+}
+.section3 .wrapper .row2 div img{
+    max-width: 100%;
+ }
+  } 
