@@ -1,0 +1,21 @@
+{
+  "name": "nextjs-course",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.4",
+    "friendly-challenge": "^0.9.13",
+    "mongodb": "^6.0.0",
+    "next": "^13.4.19",
+    "react": "18.2.0", 
+    "react-dom": "18.2.0", 
+    "react-intersection-observer": "^9.5.2",
+    "react-recaptcha": "^2.3.10",
+    "react-scroll": "^1.8.9"
+  }
+}  

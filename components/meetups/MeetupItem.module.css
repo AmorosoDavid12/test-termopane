@@ -1,0 +1,113 @@
+.item {
+  display: inline-block;
+  margin-right: 1.5%; 
+  margin-bottom: 1.75%;
+  vertical-align: top; /* Align items at the top */
+  max-width: 23%;
+
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  min-height: 210px;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 18px;
+  color: #2c292b;
+  margin: 0;
+  padding: 6px;
+  min-height: 55px;
+}
+
+.actions {
+  padding: 10px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  color: #6873db;
+  border: none;
+  background-color: inherit;
+}
+.price{
+  text-align: center;
+}
+.price h1{
+  font-weight: bold !important ;
+  font-size: 33px;
+  margin: 10px;
+}
+
+ .actions button:hover,
+.actions button:active {
+  color: #1a0452;
+} 
+@media (max-width: 1650px) {
+ 
+}
+@media (max-width: 1100px) {
+  .item {
+    max-width: 30%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .price h1{
+    font-weight: bold !important ;
+    font-size: 29px;
+    margin: 5px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .item {
+    max-width: 85%;
+    width: 85%;
+    margin: 10px;
+  }
+  .content h3 {
+    font-size: 24px;
+    padding: 12px;
+  }
+   .actions{
+    padding-top:0px;
+    padding-bottom: 8px;
+  } 
+  .actions button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .price h1{
+    font-weight: bold !important ;
+    font-size: 28px;
+    margin: 5px;
+  }
+}
+@media (max-width: 478px) {
+  .content h3 {
+    font-size: 18px;
+    padding: 2px;
+  }
+  .actions button {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+}

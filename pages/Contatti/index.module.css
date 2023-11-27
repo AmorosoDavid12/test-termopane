@@ -1,0 +1,166 @@
+/*//////////// part 1 /////////// */
+.section{
+    background-color: #ffffff;
+    padding-top: 60px ;
+    padding-bottom: 60px ;
+}
+.section h1{
+    margin-left: 5%;
+}
+.section .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section .wrapper .row1{
+    align-items: flex-start;
+}
+.section .wrapper .row2{
+    display: flex;
+    max-width: 90%;
+}
+.section .wrapper .row2 img{
+    margin-left: 30px;
+    margin-top: -5%;
+}
+
+/*//////////// Hover Button //////////*/
+@keyframes pulse {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.25);
+    }
+  
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+.hoverButton {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    border: solid #3E50E5;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation: pulse 2s infinite;
+    transform-origin: center;
+}
+:hover .hoverButton {
+    cursor: pointer;
+}
+  
+.active {
+    display: none;
+}
+
+/*//////////// part 2 /////////// */
+.section2{
+    background-color: #ffffff;
+    padding-top: 50px ;
+    padding-bottom: 60px ;
+}
+.section2 .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.section2 .wrapper .row{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.section2 a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3E50E5;
+}
+.section2 .row2{
+    display: flex;
+    justify-content: center;
+}
+.section2 .row2 img{
+    max-width: 90%;
+}
+  @media (max-width: 760px) {
+/*//////////// Hover Button //////////*/
+     .hoverButton {
+        right: 9px;
+        bottom: 35px;
+        border-width: 0 6px 6px 0;
+        padding: 7px;
+    }
+ /*//////////// part 1 /////////// */   
+ .section{
+    padding-top: 45px ;
+    padding-bottom: 40px ;
+}
+.section h1{
+    margin-left: 7.5%;
+}
+.section .wrapper .row1{
+    max-width: 85%;
+}
+   .section .wrapper .row2{
+        flex-direction: column;
+        max-width: 85%;
+    }
+    .section .wrapper .row2 img {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+/*//////////// part 2 /////////// */
+.section2 .wrapper{
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.section2 .wrapper .row{
+    text-align: center;
+    padding-top: 20px;
+    max-width: 85%;
+    padding-left: 0;
+}
+  .section2 .wrapper .row2{
+    text-align: center;
+    padding-top: 20px;
+    max-width: 85%;
+    padding-bottom: 20px;    
+}
+/*//////////// part 3 /////////// */
+
+.section3 .wrapper{
+ flex-direction: column;
+ align-items: center;
+    padding-top: 40px ;
+    padding-bottom: 40px ;
+}
+.section3 .wrapper .row{
+    max-width: 85%;
+    padding-left: 0;
+}
+  .section3 .wrapper .row2{  
+    max-width: 90%;
+}
+.section3 .wrapper .row img {
+    max-width: 85%;
+    
+}
+.section3 .wrapper .row2 img {
+    max-width: 70%;
+    padding-top: 30px;
+}
+.section3 .wrapper .row2{
+    padding-bottom: 0;
+}
+
+
+  } 
